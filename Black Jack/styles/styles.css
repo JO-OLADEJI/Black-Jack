@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'great vibes';
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("../images/spade-love.jpeg");
+}
+
+.page .container {
+  width: 98%;
+  height: 96%;
+  margin: 1.2% auto 0 auto;
+  border: 3px solid brown;
+  background-image: url("../images/green.jpg");
+  background-position: center;
+}
+
+.page .container .title {
+  text-align: center;
+  font-family: 'great vibes', cursive;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: red;
+}
+
+.page .container .play-section {
+  height: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .container .play-section .box {
+  height: 100%;
+  width: 40%;
+  border: 3px solid orange;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.253))), url("../images/cards.png");
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.253)), url("../images/cards.png");
+  background-position: center;
+}
+
+.page .container .play-section .box h1 {
+  font-size: 3rem;
+  font-family: cursive;
+  color: orange;
+  text-align: center;
+}
+
+.page .container .play-section .box #card-container,
+.page .container .play-section .box #dealer-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.page .container .play-section .vs {
+  font-family: cursive;
+  font-size: calc(2rem + 1vw);
+  color: white;
+  min-width: 12%;
+  text-align: center;
+}
+
+.page .container .buttons {
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .container .buttons .button {
+  height: 70%;
+  background-color: transparent;
+  width: 7%;
+  border-radius: 0;
+  border: 2px solid black;
+  -webkit-box-shadow: 2px 2px 4px #222222;
+          box-shadow: 2px 2px 4px #222222;
+  margin: 0 1%;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.page .container .buttons #hit {
+  background-color: #0a5cf3;
+}
+
+.page .container .buttons #stand {
+  background-color: #f7f74d;
+}
+
+.page .container .buttons #deal {
+  background-color: #fc1342;
+}
+
+.page .container .scores {
+  height: 23%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .container .scores .score {
+  font-family: cursive;
+  font-size: 10rem;
+}
+
+.page .container .scores #your-score {
+  color: #14f014;
+}
+
+.page .container .scores #dealer-score {
+  color: #ce1717;
+}
+
+.page .container .scores #tie-score {
+  font-family: 'great vibes', cursive;
+  font-weight: 100;
+  font-size: 7rem;
+}
+/*# sourceMappingURL=styles.css.map */

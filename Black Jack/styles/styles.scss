@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@mixin flexer($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@font-face {
+    font-family: 'great vibes';
+    src: url('../fonts/GreatVibes-Regular.ttf');
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('../images/spade-love.jpeg');
+
+    .container {
+        width: 98%;
+        height: 96%;
+        margin: 1.2% auto 0 auto;
+        border: 3px solid brown;
+        background-image: url('../images/green.jpg');
+        background-position: center;
+
+        .title {
+            text-align: center;
+            font-family: 'great vibes', cursive;
+            font-size: 3rem;
+            margin-top: 1rem;
+            color: red;
+        }
+
+        .play-section {
+            height: 60%;
+            width: 100%;
+            @include flexer(row, space-around, center);
+
+            .box {
+                height: 100%;
+                width: 40%;
+                border: 3px solid orange;
+                background-image: linear-gradient(black, rgba(0, 0, 0, 0.253)), url('../images/cards.png');
+                background-position: center;
+
+                h1 {
+                    font-size: 3rem;
+                    font-family: cursive;
+                    color: orange;
+                    text-align: center;
+                }
+
+                #card-container,
+                #dealer-card-container {
+                    @include flexer(row, center, flex-start);
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                }
+            }
+
+            .vs {
+                font-family: cursive;
+                font-size: calc(2rem + 1vw);
+                color: white;
+                min-width: 12%;
+                text-align: center;
+            }
+        }
+
+        .buttons {
+            height: 10%;
+            width: 100%;
+            @include flexer(row, center, center);
+
+            .button {
+                height: 70%;
+                background-color: transparent;
+                width: 7%;
+                border-radius: 0;
+                border: 2px solid black;
+                box-shadow: 2px 2px 4px rgb(34, 34, 34);
+                margin: 0 1%;
+                font-family: cursive;
+                font-weight: bold;
+                font-size: 1.7rem;
+            }
+
+            #hit {
+                background-color: rgb(10, 92, 243);
+            }
+
+            #stand {
+                background-color: rgb(247, 247, 77);
+            }
+
+            #deal {
+                background-color: rgb(252, 19, 66);
+            }
+        }
+
+        .scores {
+            height: 23%;
+            width: 100%;
+            @include flexer(row, space-evenly, center);
+
+            .score {
+                font-family: cursive;
+                font-size: 10rem;
+            }
+
+            #your-score {
+                color: rgb(20, 240, 20);
+            }
+
+            #dealer-score {
+                color: rgb(206, 23, 23);
+            }
+
+            #tie-score {
+                font-family: 'great vibes', cursive;
+                font-weight: 100;
+                font-size: 7rem;
+            }
+        }
+    }
+}

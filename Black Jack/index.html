@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Joshua Oladeji">
+    <link rel="icon" href="./images/icon_spade.png">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <section class="page">
+        <!-- <h1 class="title">Black Jack</h1> -->
+        <div class="container">
+            <h1 class="title">Black Jack</h1>
+            <div class="play-section">
+                <div class="box" id="you-box">
+                    <h1>You -> <span id="your-count">0</span></h1>
+                    <div id="card-container">
+                        <!-- the screen where the player's card goes into -->
+                    </div>
+                </div> 
+                <h1 class="vs">VS</h1>
+                <div class="box" id="dealer-box">
+                    <h1>Dealer -> <span id="dealer-count">0</span></h1>
+                    <div id="dealer-card-container">
+                        <!-- the screen where the user's card goes into -->
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------------------------------- -->
+            <div class="buttons">
+                <button class="button" id="hit">HIT</button>
+                <button class="button" id="stand">STAND</button>
+                <button class="button" id="deal">DEAL</button>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+            <div class="scores">
+                <h1 class="score" id="your-score">0</h1>
+                <h1><span class="score" id="tie-score">0</span></h1>
+                <h1 class="score" id="dealer-score">0</h1>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
