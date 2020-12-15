@@ -93,17 +93,14 @@ const scoreHandler = (decision, yourScoreNode, tieScoreNode, dealerScoreNode) =>
     switch (decision) {
         case ('~ Tie ~'):
             tieScoreNode.innerHTML = parseInt(tieScoreNode.innerHTML) + 1;
-            console.log('draw');
             break;
         case ('You Win !'):
             winSound.play();
             yourScoreNode.innerHTML = parseInt(yourScoreNode.innerHTML) + 1;
-            console.log('you win');
             break;
         case ('You Lose !'):
             loseSound.play();
             dealerScoreNode.innerHTML = parseInt(dealerScoreNode.innerHTML) + 1;
-            console.log('you lose');
             break;
         default:
             break;
